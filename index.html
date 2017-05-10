@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Porfolio Gallery </title>
+	
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+</head>
+
+<body style="background:#fff;">
+<div id="elastic_grid_demo"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+
+<!-- compress version-->
+<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#elastic_grid_demo").elastic_grid({
+            'showAllText' : 'All',
+            'filterEffect': 'scaleup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 500,
+            'items' :
+            [
+                {
+                    'title'         : 'Azuki bean',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['img/large/2.jpg', 'img/large/3.jpg', 'img/large/10.jpg', 'img/large/11.jpg'],
+                    'large'         : ['img/large/2.jpg', 'img/large/3.jpg', 'img/large/10.jpg', 'img/large/11.jpg'],
+                    'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                    'button_list'   :
+                    [
+                        { 'title':'View Details', 'url':'http://myproject.com', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Development']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['img/large/4.jpg', 'img/large/5.jpg', 'img/large/6.jpg', 'img/large/7.jpg'],
+                    'large'         : ['img/large/4.jpg', 'img/large/5.jpg', 'img/large/6.jpg', 'img/large/7.jpg'],
+                    'img_title'     : ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
+                    'button_list'   :
+                    [
+                        { 'title':'View Details', 'url':'http://myproject.com', 'new_window' : true}
+                    ],
+                    'tags'          : ['Mobile Development']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['img/large/15.jpg','img/large/8.jpg', 'img/large/9.jpg', 'img/large/10.jpg'],
+                    'large'         : ['img/large/15.jpg','img/large/8.jpg', 'img/large/9.jpg', 'img/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'View Details', 'url':'http://myproject.com', 'new_window' : true}
+                    ],
+                    'tags'          : ['Web Development', 'Mobile Development']
+                }
+            ]
+        });
+    });
+</script>
+</body>
+</html>
